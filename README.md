@@ -24,4 +24,7 @@ $ open http://$(kubectl get nodes --namespace monitoring -o jsonpath="{.items[0]
 
 # grafana
 $ open http://$(kubectl get nodes --namespace monitoring -o jsonpath="{.items[0].status.addresses[0].address}"):$(kubectl get --namespace monitoring -o jsonpath="{.spec.ports[0].nodePort}" services grafana)
+
+## get password
+$ kubectl get secret --namespace monitoring grafana -o jsonpath="{.data.admin-password}" | base64 -D
 ```
