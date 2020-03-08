@@ -276,10 +276,10 @@ alertmanager:
   ## Security context to be added to alertmanager pods
   ##
   securityContext:
-    runAsUser: 65534
+    runAsUser: 1001
     runAsNonRoot: true
-    runAsGroup: 65534
-    fsGroup: 65534
+    runAsGroup: 1001
+    fsGroup: 1001
 
   service:
     annotations: {}
