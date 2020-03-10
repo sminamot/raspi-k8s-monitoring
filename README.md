@@ -10,6 +10,9 @@ $ kubectl apply -f prometheus/pvc.yaml
 ### prometheus
 ```
 $ helm install prometheus stable/prometheus -f prometheus/values.yaml --namespace monitoring
+
+# use extraScrapeConfigs
+$ helm install prometheus stable/prometheus -f prometheus/values.yaml --set-file prometheus/extraScrapeConfigs=extraScrapeConfigs.yaml --namespace monitoring
 ```
 
 ### grafana

@@ -1,6 +1,6 @@
 ## create namespace
 ```
-$ kubectl apply -f namespace.yml
+$ kubectl create ns remo
 ```
 
 ## create secret
