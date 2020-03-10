@@ -1585,14 +1585,6 @@ serverFiles:
             action: replace
             target_label: kubernetes_pod_name
 
-      # Nature remo exporter
-      - job_name: 'nature-remo'
-        dns_sd_configs:
-          - names: ['remo-exporter.remo']
-            port: 9352
-            type: A
-            refresh_interval: 5s
-
 # adds additional scrape configs to prometheus.yml
 # must be a string so you have to add a | after extraScrapeConfigs:
 # example adds prometheus-blackbox-exporter scrape config
