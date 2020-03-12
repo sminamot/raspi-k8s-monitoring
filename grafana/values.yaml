@@ -186,16 +186,16 @@ extraContainers: |
 ##
 persistence:
   type: pvc
-  enabled: false
+  enabled: true
   # storageClassName: default
   accessModes:
     - ReadWriteOnce
-  size: 10Gi
+  size: 1Gi
   # annotations: {}
   finalizers:
     - kubernetes.io/pvc-protection
   # subPath: ""
-  # existingClaim:
+  existingClaim: "pvc-volume3"
 
 initChownData:
   ## If false, data ownership will not be reset at startup
