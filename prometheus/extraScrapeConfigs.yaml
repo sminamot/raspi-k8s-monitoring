@@ -1,5 +1,3 @@
-extraScrapeConfigs: |
-# Nature remo exporter
 - job_name: 'nature-remo'
   dns_sd_configs:
     - names: ['remo-exporter.remo']
