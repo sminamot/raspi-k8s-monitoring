@@ -195,7 +195,7 @@ persistence:
   finalizers:
     - kubernetes.io/pvc-protection
   # subPath: ""
-  existingClaim: "pvc-volume3"
+  existingClaim: "grafana"
 
 initChownData:
   ## If false, data ownership will not be reset at startup

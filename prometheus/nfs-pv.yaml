@@ -1,0 +1,29 @@
+kind: PersistentVolume
+apiVersion: v1
+metadata:
+  name: prometheus-alertmanager
+spec:
+  capacity:
+    storage: 1Gi
+  accessModes:
+    - ReadWriteOnce
+  persistentVolumeReclaimPolicy: Recycle
+  storageClassName: alertmanager
+  nfs:
+    server: raspberrypi-master.local
+    path: /mnt/share/nfs/prometheus/alertmanager
+---
+kind: PersistentVolume
+apiVersion: v1
+metadata:
+  name: prometheus-server
+spec:
+  capacity:
+    storage: 1Gi
+  accessModes:
+    - ReadWriteOnce
+  persistentVolumeReclaimPolicy: Recycle
+  storageClassName: prometheus-server
+  nfs:
+    server: raspberrypi-master.local
+    path: /mnt/share/nfs/prometheus/server

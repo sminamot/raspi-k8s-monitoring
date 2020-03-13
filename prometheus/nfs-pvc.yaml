@@ -1,24 +1,22 @@
 kind: PersistentVolumeClaim
 apiVersion: v1
 metadata:
-  name: pvc-volume1
+  name: prometheus-alertmanager
 spec:
   accessModes:
     - ReadWriteOnce
-  volumeMode: Filesystem
   resources:
     requests:
       storage: 1Gi
-  storageClassName: prometheus-alertmanager
+  storageClassName: alertmanager
 ---
 kind: PersistentVolumeClaim
 apiVersion: v1
 metadata:
-  name: pvc-volume2
+  name: prometheus-server
 spec:
   accessModes:
     - ReadWriteOnce
-  volumeMode: Filesystem
   resources:
     requests:
       storage: 1Gi
