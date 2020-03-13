@@ -4,8 +4,11 @@
 $ kubectl create ns monitoring
 
 # create pv/pvc
-$ kubectl apply -f prometheus/pv.yaml
-$ kubectl apply -f prometheus/pvc.yaml
+## set up NFS before deploying
+$ kubectl apply -f grafana/nfs-pv.yaml
+$ kubectl apply -f grafana/nfs-pvc.yaml
+$ kubectl apply -f prometheus/nfs-pv.yaml
+$ kubectl apply -f prometheus/nfs-pvc.yaml
 ```
 ### prometheus
 ```
