@@ -350,9 +350,7 @@
       }
     },
     {
-      "aliasColors": {
-        "remo_humidity{id=\"36075627-08e3-4b1d-a12d-2171d050ffc2\",instance=\"10.111.168.11:9352\",job=\"nature-remo\",name=\"Remo\"}": "blue"
-      },
+      "aliasColors": {},
       "bars": false,
       "dashLength": 10,
       "dashes": false,
@@ -439,9 +437,7 @@
       }
     },
     {
-      "aliasColors": {
-        "remo_illumination{id=\"36075627-08e3-4b1d-a12d-2171d050ffc2\",instance=\"10.111.168.11:9352\",job=\"nature-remo\",name=\"Remo\"}": "yellow"
-      },
+      "aliasColors": {},
       "bars": false,
       "dashLength": 10,
       "dashes": false,
