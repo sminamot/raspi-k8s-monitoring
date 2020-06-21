@@ -4,3 +4,9 @@
       port: 9352
       type: A
       refresh_interval: 5s
+- job_name: 'nats'
+  dns_sd_configs:
+    - names: ['my-nats.default']
+      port: 7777
+      type: A
+      refresh_interval: 10s
