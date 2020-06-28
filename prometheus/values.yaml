@@ -559,7 +559,8 @@ nodeExporter:
   ## Node tolerations for node-exporter scheduling to nodes with taints
   ## Ref: https://kubernetes.io/docs/concepts/configuration/assign-pod-node/
   ##
-  tolerations: []
+  tolerations:
+    - operator: "Exists"
     # - key: "key"
     #   operator: "Equal|Exists"
     #   value: "value"
