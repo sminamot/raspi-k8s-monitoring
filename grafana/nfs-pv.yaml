@@ -10,5 +10,5 @@ spec:
   persistentVolumeReclaimPolicy: Retain
   storageClassName: grafana
   nfs:
-    server: raspberrypi-master.local
+    server: raspberrypi-master01.local
     path: /mnt/share/nfs/grafana

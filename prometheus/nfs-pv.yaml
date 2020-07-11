@@ -10,7 +10,7 @@ spec:
   persistentVolumeReclaimPolicy: Recycle
   storageClassName: alertmanager
   nfs:
-    server: raspberrypi-master.local
+    server: raspberrypi-master01.local
     path: /mnt/share/nfs/prometheus/alertmanager
 ---
 kind: PersistentVolume
@@ -25,5 +25,5 @@ spec:
   persistentVolumeReclaimPolicy: Recycle
   storageClassName: prometheus-server
   nfs:
-    server: raspberrypi-master.local
+    server: raspberrypi-master01.local
     path: /mnt/share/nfs/prometheus/server
